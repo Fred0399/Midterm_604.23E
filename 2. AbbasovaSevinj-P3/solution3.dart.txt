@@ -1,0 +1,11 @@
+TASK 3.
+List<String> namesStartWithS(List<String> names) {
+  return names.where((name) => name.startsWith('S')).toList();
+}
+void main() {
+  List<String> names = ['Sevinc', 'Asiman', 'Sara', 'John', 'Starlink', 'Fatime'];
+
+  List<String> filteredNames = namesStartWithS(names);
+
+  print('Names start with S: $filteredNames');
+}

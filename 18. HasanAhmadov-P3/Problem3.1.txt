@@ -1,0 +1,35 @@
+A mixin in Dart is a way to reuse a class's code in multiple class hierarchies. It allows you to inject functionality into a class without using inheritance.
+How to use mixins ? Let's create a mixin with the help of this code:
+
+STEP 1: CREATE A MIXIN !
+
+mixin MyMixin {
+  void write(String message) {
+    print('Write: $message');
+  }
+}
+
+STEP 2: USE IT IN A CLASS !
+
+class Dog with MyMixin {
+  String name;
+
+  Dog(this.name);
+
+  void bark() {
+    print('$name says Woof!');
+  }
+} 
+
+STEP 3: LET'S USE IT IN MAIN !
+
+void main() {
+  var myDog = Dog('Poli');
+  myDog.bark();
+  myDog.log('HAV HAV HAV');
+} 
+
+We mostly use this at these time:
+1) When multiple classes share common behaviours or functionalities.
+2) When traditional inheritance doesn't fit well due to multiple inheritance limitations or complex relationships.
+3) When organizing code for better maintainability and readability.

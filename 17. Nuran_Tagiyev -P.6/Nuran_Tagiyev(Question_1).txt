@@ -1,0 +1,40 @@
+// Basically, this keyword is used to denotes the current instance. Check out the below example.
+
+void main() {
+  
+  Person mike = Person(21);
+  
+  print(mike.height);
+  
+}
+
+class Person {
+  
+  double height;
+  
+  Person(double height) {
+    height = height;
+
+  }
+}
+// When we run this dart code, it outputs null as the height. Because we have used height = height inside the Person constructor, but the code doesn't know which height is the class property.
+
+// Therefore, we can use this keyword to denotes the current instance and it will help the code to understand which height belongs to the class. So, we can use it as below and we will get the correct output:
+
+void main() {
+  
+  Person mike = Person(21);
+  
+  print(mike.height);
+  
+}
+
+class Person {
+  
+  double height;
+  
+  Person(double height) {
+    this.height = height;
+
+  }
+}  

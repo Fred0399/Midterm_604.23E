@@ -1,0 +1,8 @@
+Named parameters more flexible and readable
+They can have defaults or be required
+
+Positional parameters are traditional way of passing argument to a function
+
+Performance difference: prioritize readability;
+
+We can use both for flexible APIs

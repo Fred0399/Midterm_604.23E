@@ -1,0 +1,27 @@
+Named Parameters
+Named parameters are explicitly labeled when passed into a function. They are defined using curly braces `{}` in the function declaration.
+Named parameters are great for improving code readability, as the names make the purpose of the argument clear.
+Named parameters are typically optional, but you can make them mandatory using the `required` keyword.
+  String greet(String name, String title) {
+  return 'Hello $title $name!';
+}
+
+void main() {
+  print(greet('Asiman', 'Student'));
+}
+
+Positional Parameters
+Positional parameters are passed based on their position or order in the function call. They are defined without curly braces.
+Positional parameters are concise and useful when the order of arguments is intuitive or when there are fewer parameters.
+Positional parameters can be mandatory or optional. To make them optional, enclose them in square brackets `[]`.
+  void greet(String name, [String? message]) {
+    print('$name: $message');
+  }
+  greet('Asiman', 'how are you!');
+  
+
+When to Use Each?
+Named Parameters-Use them for functions with many parameters, or when the arguments' meaning isn't immediately obvious, like in a complex configuration setup.
+Positional Parameters- Use them for simpler functions with few arguments, especially when the argument order is straightforward and intuitive.
+
+
