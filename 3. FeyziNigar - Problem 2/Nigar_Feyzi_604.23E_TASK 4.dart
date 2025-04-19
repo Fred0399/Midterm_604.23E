@@ -6,8 +6,8 @@ class Circle {
 
 // here we create the method to calculate the area
   double area() {
+    /// Note: Would be better to use dart math library for pi.
     return 3.1415 * radius * radius; 
- 
   }
 }
 

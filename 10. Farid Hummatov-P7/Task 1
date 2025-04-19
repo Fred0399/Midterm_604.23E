@@ -1,0 +1,16 @@
+MAP()
+Consider the map() method as a transformer function. It accepts a collection, 
+transforms it into something else based on the conditions and returns a new collection.
+The map() method takes in a collection of milk bottles and gives us back a collection of cheese slices. 
+It only needs to be supplied with the instructions of how to turn milk into cheese and it takes care of the rest.
+The map() method’s returns the same number of items as the collection supplied to it.
+The map() method will always return a collection. Even if it is supplied with a collection containing only one item, 
+it will create a collection containing a single item and return it.
+
+WHERE()
+The where() method is conventionally named “filter()” in other languages out there, such as Java and Javascript. 
+It accepts a collection of items and a condition, filters the collection based on the condition and returns a new collection of filtered items.
+The where() method accepts a collection of various items and returns us specific items, 
+in this case a collection of cheese items, omitting other items. The condition supplied to it has to specify what it needs to filter out.
+The where() method’s number of items returned depends on the condition.
+The where() method always returns a collection. If the provided condition does not have any matching items, it still returns an empty collection. This makes it null-safe.

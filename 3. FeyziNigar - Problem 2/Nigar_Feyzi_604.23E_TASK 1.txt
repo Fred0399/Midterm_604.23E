@@ -1,11 +1,24 @@
 // TASK 1 
 
 Abstract Class in Dart
-An abstract class in Dart serves as a blueprint for other classes. It defines a common interface or base structure that other classes must follow. Abstract classes are useful when you want to enforce certain methods to be implemented by subclasses. They can contain both abstract methods (methods without implementation) and concrete methods (methods with implementation). Importantly, abstract classes cannot be instantiated directly, meaning you cannot create an object from them.
+An abstract class in Dart serves as a blueprint for other classes. 
+It defines a common interface or base structure that other classes must follow. 
+Abstract classes are useful when you want to enforce certain methods to be implemented by subclasses. 
+They can contain both abstract methods (methods without implementation) and 
+concrete methods (methods with implementation). 
+Importantly, abstract classes cannot be instantiated directly, meaning you cannot create an object from them.
 
 Concrete Class
-A concrete class is a fully defined and implementable class. It contains complete method implementations and can be used to create objects. It does not contain any abstract methods. Concrete classes represent real-world entities or objects and are typically the classes you work with directly in your code.
+A concrete class is a fully defined and implementable class. 
+It contains complete method implementations and 
+can be used to create objects. 
+It does not contain any abstract methods. 
+Concrete classes represent real-world entities or 
+objects and are typically the classes you work with directly in your code.
 
 Mixin
-A mixin is a special kind of class used to share code across multiple classes without using traditional inheritance. Mixins are not designed to be instantiated or to define constructors. Instead, they are meant to be added to other classes to provide common behavior or functionality. This allows multiple classes to reuse the same code without being part of a strict inheritance hierarchy.
+A mixin is a special kind of class used to share code across multiple classes without using traditional inheritance. 
+Mixins are not designed to be instantiated or to define constructors. 
+Instead, they are meant to be added to other classes to provide common behavior or functionality. 
+This allows multiple classes to reuse the same code without being part of a strict inheritance hierarchy.
 

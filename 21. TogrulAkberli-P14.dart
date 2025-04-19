@@ -1,10 +1,12 @@
 //Problem 14 
 //Task1
 
-//A closure is a function object that has access to variables in its lexical scope, even when the function is used outside of its original scope.
+// A closure is a function object that has access to variables in its lexical scope, even when the function is used outside of its original scope.
 // Functions can close over variables defined in surrounding scopes. In the following example, makeAdder() captures the variable addBy. Wherever the returned function goes, it remembers addBy.
 // Dart is a lexically scoped language, which means that the scope of variables is determined statically, simply by the layout of the code. You can "follow the curly braces outwards" to see if a variable is in scope.
 
+/// NOTE: Where is the example of makeAdder?? 
+/// 
 //Task2
 
 String reverseString(String str) {
@@ -16,14 +18,14 @@ String reverseString(String str) {
 }
 
 // Example usage:
-void mainTask2(){
-  String inputString = "Hello, ToghrulAlekberli!";
-  String reversedString = reverseString(inputString);
-  print(reversedString); // "!ilrebkelAlurhgoT ,olleH"
-}
+// void main(){
+//   String inputString = "Hello, ToghrulAlekberli!";
+//   String reversedString = reverseString(inputString);
+//   print(reversedString); // "!ilrebkelAlurhgoT ,olleH"
+// }
 
 // Task4
-
+// NOTE: neither Document class, nor Sharable mixin exist in below code!!;
 class Full{
   int a = 213;
   int b = 500;
@@ -86,11 +88,13 @@ class Notification {
   Notification(this.title, this.message);
   
   String send() {
-    return "[Stitle]: $message";
+
+    return "[Stitle]: $message"; // Your version
+    // return "[$title]: $message"; // Correct version
   }
 }
 
-void main() {
-  Notification myNotification = Notification("Update","Cristiano Ronaldo is the best player in the world.");
-  print(myNotification.send());
-}
+// void main() {
+//   Notification myNotification = Notification("Update","Cristiano Ronaldo is the best player in the world.");
+//   print(myNotification.send());
+// }

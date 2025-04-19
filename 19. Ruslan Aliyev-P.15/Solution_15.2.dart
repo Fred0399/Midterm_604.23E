@@ -20,7 +20,8 @@ List<int> num(int a, int b){
   }
 }
 void main(){
-  
-  print(num(2, 50));
+  // 1 is not a prime number but printed when given;
+  // Problem solution says numbers between 1 and 50;
+  print(num(1, 50));
   
 }

@@ -1,3 +1,5 @@
+/// Note: only prime numbers should be printed;
+
 void main() {
   int num = 1;
 

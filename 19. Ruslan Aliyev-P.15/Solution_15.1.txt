@@ -6,3 +6,6 @@ Positional parameters are traditional way of passing argument to a function
 Performance difference: prioritize readability;
 
 We can use both for flexible APIs
+
+/// NOTE: answer does not cover good explanation of named parameters, 
+// Can be improved;

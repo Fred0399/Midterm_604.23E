@@ -1,9 +1,17 @@
 //1
 
-// Positional parameters are by default necessary and can't be omitted,however named arguments are optional and can be omitted. For specifying named parameters we use {} braces,for positional parameters we use [] brackets.Named parameters are generally preferred for functions with many optional parameters, as they improve readability and reduce ambiguity. Positional parameters can be suitable for functions with fewer parameters or when a more concise syntax is accepted. //
+// Positional parameters are by default necessary and can't be omitted,
+//however named arguments are optional and can be omitted. 
+//For specifying named parameters we use {} braces,
+//for positional parameters we use [] brackets.
+//Named parameters are generally preferred for functions with many optional parameters, 
+//as they improve readability and reduce ambiguity. 
+//Positional parameters can be suitable for functions with fewer parameters or when a more concise syntax is accepted. //
 
+
+/// NOTE: It's asked in question description to print weekday or weekend,
+/// but it's not clear what to print if the day is not a weekday or weekend.
 // 2. 
-
 void weekdayPrint() {
   var weekday = 3;
   switch (weekday) {
@@ -63,14 +71,14 @@ class Point {
 
 void main(){
   
-  //weekdayPrint();
+  weekdayPrint();
   
-   /* const point1 = Point(20, 20);
+   const point1 = Point(20, 20);
   const point2 = Point.origin();
   print(point1); 
-  print(point2); */
+  print(point2); 
   
-  //print(personalizedGreeting('Shahnigar',18, city:'Baku'));
+  print(personalizedGreeting('Shahnigar',18, city:'Baku'));
 
 }
 

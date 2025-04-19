@@ -1,24 +1,28 @@
-Problem 13
+// Problem 13
 
-Ex 1:
-map()
+// Ex 1:
+// map()
 
-In general, a map is an object that associates keys and values. Both keys and values can be any type of object. Each key occurs only once, but you can use the same value multiple times. Dart support for maps is provided by map literals and the Map type.
+// In general, a map is an object that associates keys and values. Both keys and values can be any type of object. Each key occurs only once, but you can use the same value multiple times. Dart support for maps is provided by map literals and the Map type.
 
-The where() method is conventionally named “filter()” in other languages out there, such as Java and Javascript. It accepts a collection of items and a condition, filters the collection based on the condition and returns a new collection of filtered items.
+// The where() method is conventionally named “filter()” in other languages out there, such as Java and Javascript. It accepts a collection of items and a condition, filters the collection based on the condition and returns a new collection of filtered items.
+/// /// NOTE: Original answer confuses Map data structure with map() method. Should explain:
+/// map() - transforms elements (e.g., numbers.map((n) => n * 2))
+/// where() - filters elements (e.g., numbers.where((n) => n % 2 == 0))
+ 
+// Ex 2:
 
-Ex 2:
-
-void main(){
-  int? value1 = 5;
-  int? value2 = null;
-  int? value3 = 10;
+// void main(){
+//   int? value1 = 5;
+//   int? value2 = null;
+//   int? value3 = 10;
   
-  int sum = (value1 ?? 0) + (value2 ?? 0) + (value3 ?? 0) ;
-  print('Sum: $sum');
+//   int sum = (value1 ?? 0) + (value2 ?? 0) + (value3 ?? 0) ;
+//   print('Sum: $sum');
+// }
 
-Ex 3 :
-
+// Ex 3 :
+/// NOTE: Would be better to check if weight & height is 0 or not.
 String bmi_calc (double weight,double height){
   
   double bmi_calc = weight / (height * height);
@@ -39,22 +43,23 @@ String bmi_calc (double weight,double height){
   }
 }
 
-void main(){
-  print(bmi_calc(57, 1.70));  
-  print(bmi_calc(60, 1.75));  
-  print(bmi_calc(66, 1.90));  
-  print(bmi_calc(100, 2.10)); 
+// void main(){
+//   print(bmi_calc(57, 1.70));  
+//   print(bmi_calc(60, 1.75));  
+//   print(bmi_calc(66, 1.90));  
+//   print(bmi_calc(100, 2.10)); 
 
-}
+// }
 
-Ex 4:
+// Ex 4:
 
-
+/// NOTE: Should have print statements to see the output.
 class Person {
   String name;
   int age;
   
-  Person(his.name, his.age);
+  // Person(his.name, his.age); Your code for constructor is wrong.
+  Person(this.name, this.age); // NOTE: Correct code.
   
 
   void displayInfo() {
@@ -110,9 +115,11 @@ class Manager extends Employee {
       'salary: $salary, department: $department, team: $teamMembers)';
 }
 
+/// NOTE: Should have print statements to see the output.
 void main() {
   var person = Person('John Doe', 30);
   var employee = Employee('Alice Smith', 28, 'EMP123', 50000);
   var manager = Manager('Bob Johnson', 45, 'MGR456', 90000, 
                        'Engineering', ['Ferid', 'Vusal', 'Sabuhi']);
   
+}
